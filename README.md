@@ -1,12 +1,21 @@
-# ETCH-A-SKETCH
+# Etch-A-Sketch
 
-[Live Preview](https://aadam-ali.github.io/etch-a-sketch/).
+🖥️ [Live Preview](https://aadam-ali.github.io/etch-a-sketch/)
 
-This project has been complete as part of the [Odin Project](https://www.theodinproject.com/courses/foundations/lessons/etch-a-sketch-project).
+## Description
 
-### What Were The Requirements For This Project?
+This is an etch a sketch application that allows users to create a custom sized canvas (to a maximum size of 64x64) and select from 3 options: colourful (random colour), black (black) and darken (darkens the current colour of a square). The user is also able to reset the board to have a fresh canvas that is the default size of 16x16.
 
-* Create a webpage with a 16x16 grid of square divs
-* Change color of div as mouse passes over
-* Add a clear button and send user a popup prompting them for a grid 
-* Have each pass change a div to a random colour / have each pass incrementally darken a div
+## Future Plans
+
+Implementation of a colour picker and add functionality that allows users on touchscreen devices to drag over squares rather than tapping individual squares to colour them.
+
+## Known Bugs
+
+Users on touch screen devices cannot just drag/glide their fingers over squares, they have to tap each individual square to colour them in.
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
