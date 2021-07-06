@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
 
 :root {
     --grid-cols: 0;
@@ -13,23 +13,23 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #ffcccc;
+    background-image: url("../images/background.jpg");
+    font-family: 'Yomogi', cursive;
 }
 
 
 #title {
-    font-size: 72px;
-    font-family: 'Nanum Pen Script', cursive;
-    margin: 20px 0px 20px 0px;
-    color: red;
+    font-size: 3.75rem;
+    margin: 1.25rem 0rem;
+    color: #fff;
 }
 
 #container {
     display: grid;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
-    height: 720px;
-    width: 720px;
+    height: 45rem;
+    width: 45rem;
 }
 
 #controls {
@@ -40,18 +40,19 @@ body {
 }
 
 .controlBtn {
-    width: 110px;
-    height: 50px;
-    margin: 40px 20px 40px 20px;
+    width: 6.875rem;
+    height: 3.125rem;
+    margin: 2.5rem 1.25rem;
     border: none;
-    font-family: 'Nanum Pen Script', cursive;
-    font-size: 30px;
-    background-color: #ccffe6;
+    font-size: 1.5rem;
+    background-color: #e9322e;
+    color: white;
     transition: transform .5s;
+    font-family: 'Yomogi', cursive;
 }
 
 .controlBtn:hover {
-    background-color: #00e5e5;
+    background-color: #D01915;
     transform: scale(1.05);
 }
 
@@ -59,6 +60,27 @@ body {
 .gridDiv {
     width: 1fr;
     height: 1fr;
-    border: rgba(0, 0, 0, 0.137) 1px solid;
+    border: rgba(0, 0, 0, 0.137) 0.0625rem solid;
     background-color: white;
+}
+
+@media only screen and (max-width: 480px) {
+    #title {
+        font-size: 3rem;
+    }
+
+    #container {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    #controls {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .controlBtn {
+        margin: 1.25rem 0.6125rem;
+    }
 }
