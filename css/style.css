@@ -57,7 +57,7 @@ body {
 }
 
 
-.gridDiv {
+.grid-div {
     width: 1fr;
     height: 1fr;
     border: rgba(0, 0, 0, 0.137) 0.0625rem solid;
