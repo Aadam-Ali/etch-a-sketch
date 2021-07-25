@@ -19,3 +19,4 @@ Users on touch screen devices cannot just drag/glide their fingers over squares,
 - HTML
 - CSS
 - JavaScript
+- jQuery
